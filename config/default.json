@@ -1,3 +1,6 @@
 {
-  "mongoURI": "mongodb+srv://jc123:jc123@cluster0-mnmux.mongodb.net/test?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://jc123:mypwd@cluster0-mnmux.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "mysecrettoken",
+  "githubClientId": "5581dd3ecc307da1d80d",
+  "githubSecret": "4bb2f96940554aa56a4062249345ec3d4a828d38"
 }
