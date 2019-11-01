@@ -41,15 +41,13 @@ router.post(
       if (!user) {
         return res
           .status(400)
-          .json({ errors: [{ msg: "Invalid credentials A" }] });
+          .json({ errors: [{ msg: "Account does not exist" }] });
       }
 
       const isMatch = await bcrypt.compare(password, user.password);
 
       if (!isMatch) {
-        return res
-          .status(400)
-          .json({ errors: [{ msg: "Invalid credentials B" }] });
+        return res.status(400).json({ errors: [{ msg: "Wrong password!" }] });
       }
 
       const payload = {
